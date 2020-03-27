@@ -1,0 +1,11 @@
+class A:
+  def __init__(self):
+    print("my first program in github")
+    
+  def show(self,name):
+     print("hi",self.name)
+     
+     
+s1=A()
+s1.show('savitha')
+  
