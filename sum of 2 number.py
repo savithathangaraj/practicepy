@@ -78,3 +78,16 @@ def plusMinus(arr):
     print("{:.6f}".format(d/g))
     print("{:.6f}".format(e/g))
 
+    # staircase pattern
+    def staircase(n):
+    k=n-1
+    j=1
+    while n>0:
+        for i in range(k):
+            print(" ",end="")
+        for i in range(j):
+            print("#",end="")
+        n-=1
+        k-=1
+        j+=1
+        print()
