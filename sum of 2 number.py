@@ -60,3 +60,21 @@ for i in range(0,len(list),1):
                 
     s=abs(sum1-sum2)
     return s
+#printing number with 6 decimal digits
+def plusMinus(arr):
+    c=0
+    d=0
+    e=0
+    for i in arr:
+        if i>0:
+            c+=1
+        elif i<0:
+            d+=1
+        else:
+            e+=1
+    g=len(arr)
+    
+    print("{:.6f}".format(c/g))
+    print("{:.6f}".format(d/g))
+    print("{:.6f}".format(e/g))
+
