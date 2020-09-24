@@ -38,3 +38,25 @@ for i in range(0,len(list),1):
     # e[1]=d
 
     return e
+
+    # absolute sum of diagonals of a matrics
+    def diagonalDifference(arr):
+    # Write your code here
+    sum1=0
+    sum2=0
+    for i in range(0,len(arr)):
+        for j in range(0,len(arr)):
+            if i==j:
+                sum1=sum1+arr[i][j]
+                
+                
+    j=len(arr)
+    
+    for i in range(0,len(arr)):
+        for j in range((len(arr)-1),-1,-1):
+            if ((i+j)==(len(arr)-1)):
+                sum2=sum2+arr[i][j]
+                
+                
+    s=abs(sum1-sum2)
+    return s
