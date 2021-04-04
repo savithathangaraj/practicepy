@@ -29,3 +29,49 @@ for i in range(n):
 	if(l==0):
 		print("Yes")
 	l=0
+
+#selection sort
+lst=[]
+n=int(input())
+l=1
+for i in range(n):
+	k=int(input())
+	lst.append(k)
+for j in range(n):
+    min=lst[j]
+    for i in range(j+1,n):
+        if(lst[i]<lst[j]):
+	        lst[j],lst[i]=lst[i],lst[j]
+l+=1
+for i in range(n):
+	print(lst[i],end=" ")
+
+#print largest and smallest in the list
+lst=[]
+n=int(input())
+for i in range(n):
+	k=int(input())
+	lst.append(k)
+max=lst[0]
+min=lst[0]
+for i in range(n):
+    if(max<lst[i]):
+        max=lst[i]
+    if(min>lst[i]):
+        min=lst[i]
+	
+print(max,'\n',min)
+#finding the second largest value
+lst=[]
+temp=0
+n=int(input())
+for i in range(n):
+    k=int(input())
+    lst.append(k)
+min=lst[0]
+for i in range(n):
+    if(min<lst[i]):
+        temp=min
+        min=lst[i]
+		
+print(temp)
