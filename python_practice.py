@@ -15,13 +15,17 @@ for i in range(n):
 print(l,'\n',m)
 #to find whether the given no in the list is prime or not
 lst=[]
+l=0
 n=int(input())
 for i in range(n):
 	k=int(input())
 	lst.append(k)
 for i in range(n):
-	for j in range(1,i):
-		if(i%j==0):
-			print('NO')
-		else:
-			print("Yes")
+	for j in range(2,lst[i]):
+		if(lst[i]%j==0):
+		    l=l+1
+		    print('NO')
+		    break
+	if(l==0):
+		print("Yes")
+	l=0
